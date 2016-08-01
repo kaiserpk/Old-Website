@@ -1,0 +1,120 @@
+body {
+  background: #415a6c;
+  margin: 0;
+  font-family: 'Roboto Slab';
+}
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 850px;
+}
+.parallax-layer {
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 960px 253px;
+}
+  .layer-0 {
+    top: 0;
+    z-index: 5;
+    background: #dbf0ff url('http://i.imgur.com/4hwp8up.png') no-repeat top 40px center;
+    background-size: 120px 138.5px;
+  }
+  .layer-1 {
+    top: -100px;
+    z-index: 5;
+    background-image: url('http://i.imgur.com/Ra2bzmb.png');
+  }
+  .layer-2 {
+    top: -50px;
+    z-index: 10;
+    background-image: url('http://i.imgur.com/jSOo9SK.png');
+  }
+  .layer-3 {
+    top: -10px;
+    z-index: 15;
+    background-image: url('http://i.imgur.com/DOZRBDj.png');
+  }
+  .layer-4 {
+    top: 65px;
+    z-index: 20;
+    background-image: url('http://i.imgur.com/JbSR9JY.png');
+  }
+  .layer-5 {
+    top: 150px;
+    z-index: 25;
+    background-image: url('http://i.imgur.com/Ti2mNxd.png');
+  }
+
+.content {
+  color: #fff;
+  position: absolute;
+  top: 550px;
+  background: #415a6c;
+  width: 100%;
+  min-height: 1500px;
+}
+
+.jumbotron {
+  background: #fe0;
+}
+  .jumbotron h1,h3 {
+    text-align: center;
+  }
+
+.navbar {
+  background: #415a6c;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+  .navbar .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+  }
+  .navbar .navbar-nav {
+    width: 77%;
+    text-align: center;
+  }
+    .navbar .navbar-nav li {
+      float: none;
+      font-size: 20px;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+      .navbar .navbar-nav li > a {
+        color: #fff;
+      }
+
+.media-heading {
+  text-align: left;
+}
+
+.thetatau {
+  padding-left: 25px;
+  padding-right: 35px;
+}
+
+.skills {
+  padding-left: 25px;
+}
+
+#nav {
+  width: 100%;
+  position: static;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all .6s ease-in-out;
+}
