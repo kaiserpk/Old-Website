@@ -57,14 +57,26 @@ body {
   top: 550px;
   background: #415a6c;
   width: 100%;
-  min-height: 1500px;
+  min-height: 2000px;
 }
 
 .jumbotron {
-  background: #fe0;
+  background: #00e5ee;
 }
   .jumbotron h1,h3 {
     text-align: center;
+  }
+
+.resume-pad {
+  padding-top: 10px;
+}
+
+.table-box {
+  border-style: solid !important;
+  border-color: white !important;
+}
+  .table-box th, .table-box td {
+    border-top: none !important;
   }
 
 .navbar {
@@ -94,13 +106,25 @@ body {
         color: #fff;
       }
 
+.anchor{
+  display: block;
+  height: 130px; /*same height as header*/
+  margin-top: -130px; /*same height as header*/
+  visibility: hidden;
+}
+
 .media-heading {
   text-align: left;
 }
 
-.thetatau {
+.icon-pad {
   padding-left: 25px;
   padding-right: 35px;
+}
+
+.pelicans {
+  padding-left: 15px;
+  padding-right: 20px;
 }
 
 .skills {
