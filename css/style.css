@@ -19,33 +19,33 @@ body {
   background-repeat: repeat-x;
   background-size: 960px 253px;
 }
-  .layer-0 {
+  #layer-0 {
     top: 0;
     z-index: 5;
     background: #dbf0ff url('http://i.imgur.com/4hwp8up.png') no-repeat top 40px center;
     background-size: 120px 138.5px;
   }
-  .layer-1 {
+  #layer-1 {
     top: -100px;
     z-index: 5;
     background-image: url('http://i.imgur.com/Ra2bzmb.png');
   }
-  .layer-2 {
+  #layer-2 {
     top: -50px;
     z-index: 10;
     background-image: url('http://i.imgur.com/jSOo9SK.png');
   }
-  .layer-3 {
+  #layer-3 {
     top: -10px;
     z-index: 15;
     background-image: url('http://i.imgur.com/DOZRBDj.png');
   }
-  .layer-4 {
+  #layer-4 {
     top: 65px;
     z-index: 20;
     background-image: url('http://i.imgur.com/JbSR9JY.png');
   }
-  .layer-5 {
+  #layer-5 {
     top: 150px;
     z-index: 25;
     background-image: url('http://i.imgur.com/Ti2mNxd.png');
@@ -60,15 +60,45 @@ body {
   min-height: 2000px;
 }
 
+#separator {
+  display: block;
+  background: #415a6c;
+  height: 100px;
+  text-align: center;
+}
+  #separator a > i {
+    color: #fff;
+  }
+
 .jumbotron {
-  background: #ff8c0f;
+  color: #53868b;
+  background: #ffae42;
 }
   .jumbotron h1,h3 {
     text-align: center;
   }
 
+.box-pad {
+  padding-top: 15px;
+  padding-left: 53px;
+}
+
 .resume-pad {
-  padding-top: 10px;
+  border-width: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#resume-button {
+  font-family: 'Roboto Slab';
+}
+
+.md-margin {
+  margin: 35px;
+}
+
+.sm-margin {
+  margin: 25px;
 }
 
 .table-box {
@@ -88,11 +118,21 @@ body {
   padding-bottom: 10px;
 }
   .navbar .navbar-brand {
-    color: #fff;
-    font-size: 20px;
+    color: #fff !important;
+    font-size: 40px;
+    font-family: 'Arizonia', Helvetica, sans-serif;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
   }
+  .navbar .navbar-brand:hover {
+    color: #000 !important;
+  }
+  .navbar .navbar-nav li > a {
+    color: #fff;
+  }
+
+@media (min-width: 768px) {
   .navbar .navbar-nav {
-    width: 77%;
+    width: 68%;
     text-align: center;
   }
     .navbar .navbar-nav li {
@@ -102,9 +142,7 @@ body {
       padding-left: 10px;
       padding-right: 10px;
     }
-      .navbar .navbar-nav li > a {
-        color: #fff;
-      }
+}
 
 .anchor{
   display: block;
