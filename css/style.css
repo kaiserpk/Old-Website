@@ -73,14 +73,22 @@ body {
 .jumbotron {
   color: #53868b;
   background: #ffae42;
+  margin-top: 70px;
 }
   .jumbotron h1,h3 {
     text-align: center;
   }
 
-.box-pad {
-  padding-top: 15px;
-  padding-left: 53px;
+@media (max-width: 768px) {
+  .mobile-adjust {
+    margin-left: 115px;
+    margin-bottom: 35px;
+  }
+}
+
+.resume-margin {
+  margin-top: 15px;
+  margin-left: 53px;
 }
 
 .resume-pad {
@@ -155,7 +163,7 @@ body {
   text-align: left;
 }
 
-.icon-pad {
+.sushi {
   padding-left: 25px;
   padding-right: 35px;
 }
@@ -163,6 +171,11 @@ body {
 .pelicans {
   padding-left: 15px;
   padding-right: 20px;
+}
+
+.guitar {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .skills {
