@@ -5,11 +5,11 @@ $('#nav').affix({
 });
 
 /* highlight the top nav as scrolling occurs */
-$('body').scrollspy({ target: '#nav' })
+$('body').scrollspy({ target: '#nav', offset: -39 })
 
 /* brand fade in if navbar is near */
 $(window).scroll(function() {
-  if ( $(this).scrollTop() > 600 ) {
+  if ( $(this).scrollTop() > 550 ) {
     $('.scroll-top').fadeIn();
   }
   else {

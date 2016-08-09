@@ -1,7 +1,7 @@
 body {
   background: #415a6c;
   margin: 0;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
 }
 .parallax-container {
   position: fixed;
@@ -51,13 +51,13 @@ body {
     background-image: url('http://i.imgur.com/Ti2mNxd.png');
   }
 
-.content {
+#content {
   color: #fff;
   position: absolute;
   top: 550px;
   background: #415a6c;
   width: 100%;
-  min-height: 2000px;
+  min-height: 2100px;
 }
 
 #separator {
@@ -73,7 +73,7 @@ body {
 .jumbotron {
   color: #53868b;
   background: #ffae42;
-  margin-top: 70px;
+  margin-top: 50px;
 }
   .jumbotron h1,h3 {
     text-align: center;
@@ -98,7 +98,7 @@ body {
 }
 
 #resume-button {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
 }
 
 .md-margin {
@@ -107,6 +107,10 @@ body {
 
 .sm-margin {
   margin: 25px;
+}
+
+.xs-margin {
+  margin: 10px;
 }
 
 .table-box {
@@ -122,13 +126,11 @@ body {
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
   .navbar .navbar-brand {
     color: #fff !important;
     font-size: 40px;
-    font-family: 'Arizonia', Helvetica, sans-serif;
+    font-family: 'Arizonia', 'Roboto Slab', Helvetica, sans-serif;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
   }
   .navbar .navbar-brand:hover {
@@ -154,8 +156,8 @@ body {
 
 .anchor{
   display: block;
-  height: 130px; /*same height as header*/
-  margin-top: -130px; /*same height as header*/
+  height: 110px; /*same height as header*/
+  margin-top: -110px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -178,6 +180,11 @@ body {
   padding-right: 30px;
 }
 
+.mystery {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .skills {
   padding-left: 25px;
 }
@@ -192,4 +199,43 @@ body {
   top: 0;
   z-index: 10;
   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer {
+  color: #fff;
+  position: absolute;
+  background: #228b22;
+  width: 100%;
+  min-height: 575px;
+}
+@media (min-width: 768px) {
+  #footer {
+    top: 2650px;
+  }
+}
+@media (max-width: 768px) {
+  #footer {
+    top: 3290px;
+  }
+}
+
+#footer li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.fa-phone-square {
+  font-size: 1.2em;
+}
+
+.contact-pad {
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .mobile-margin {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
