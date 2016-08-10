@@ -69,13 +69,16 @@ body {
   #separator a > i {
     color: #fff;
   }
+  #separator a > i:hover {
+    color: #a9a9a9;
+  }
 
 .jumbotron {
   color: #53868b;
   background: #ffae42;
   margin-top: 50px;
 }
-  .jumbotron h1,h3 {
+  .jumbotron h3,h1 {
     text-align: center;
   }
 
@@ -161,10 +164,6 @@ body {
   visibility: hidden;
 }
 
-.media-heading {
-  text-align: left;
-}
-
 .sushi {
   padding-left: 25px;
   padding-right: 35px;
@@ -186,7 +185,7 @@ body {
 }
 
 .skills {
-  padding-left: 25px;
+  margin-left: 25px;
 }
 
 #nav {
@@ -202,21 +201,10 @@ body {
 }
 
 #footer {
-  color: #fff;
   position: absolute;
   background: #228b22;
   width: 100%;
   min-height: 575px;
-}
-@media (min-width: 768px) {
-  #footer {
-    top: 2650px;
-  }
-}
-@media (max-width: 768px) {
-  #footer {
-    top: 3290px;
-  }
 }
 
 #footer li {
@@ -234,7 +222,7 @@ body {
 
 @media (max-width: 768px) {
   .mobile-margin {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
   }
