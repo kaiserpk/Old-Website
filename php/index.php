@@ -1,33 +1,35 @@
 <?php
-  if ( isset($_POST["submit"]) ) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
 
-    $from = '$email';
-    $to = 'kaiser@fapl.co';
-    $subject = 'Message from website';
-    $body = '$message';
+function isEmail($email) {
+  return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
 
-    if ( !$_POST['name'] ) {
-      $errName = 'Please enter your name';
-    }
+if ($_POST) {
+  $to = 'kaiser@fapl.co';
 
-    if ( !$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
-      $errEmail = 'Please enter a valid email address';
-    }
+  $name = addslashes(trim($_POST['name']));
+  $from = addslashes(trim($_POST['email']));
+  $subject = 'Message from website';
+  $message = addslashes(trim($_POST['message']));
 
-    if ( !$_POST['message'] ) {
-      $errMessage = 'Please enter your message';
-    }
+  $array = array('nameMessage' => '', 'emailMessage' => '', 'messageMessage' => '');
 
-    if ( !$errName && !$errEmail && !$errMessage ) {
-      if ( mail($to, $subject, $body, $from) ) {
-        $result = '<div class="alert alert-success"> Your message has been sent! </div>';
-      }
-      else {
-        $result = '<div class="alert alert-danger"> There was an error sending your message. </div>';
-      }
-    }
+  if ( $name == '' ) {
+    $array['nameMessage'] = 'Please enter a name';
   }
+  if ( !isEmail($from) ) {
+    $array['emailMessage'] = 'Please enter a valid email address';
+  }
+  if ( $message == '' ) {
+    $array['messageMessage'] = 'Please enter your message';
+  }
+
+  if ( $name != ''  && isEmail($from) && $message != '' ) {
+    $header = "From: " . $from . " <" . $from . ">" . "\r\n" . "Reply-To: " . $from;
+    mail( $to, $subject . $message, $header );
+  }
+
+  echo json_encode($array);
+}
+
 ?>
