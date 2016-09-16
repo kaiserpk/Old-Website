@@ -10,11 +10,29 @@ $('body').scrollspy({ target: '#nav', offset: -60 })
 /* brand fade in if navbar is near */
 $(window).scroll(function() {
   if ( $(this).scrollTop() > 550 ) {
-    $('.scroll-top').fadeIn(600);
+    $('.fader').fadeIn(600);
   }
   else {
-    $('.scroll-top').fadeOut(600);
+    $('.fader').fadeOut(600);
   }
+});
+
+$(window).scroll(function() {
+  if ( $(this).scrollTop() > 650 ) {
+    $('#content').css('padding-top', 50);
+  }
+  else {
+    $('#content').css('padding-top', 0);
+  }
+  /* Alternate way using jumbotron margins */
+  /*
+  if ( $(this).scrollTop() > 650 ) {
+    $('.jumbotron').css('margin-top', 70);
+  }
+  else {
+    $('.jumbotron').css('margin-top', 20);
+  }
+  */
 });
 
 /* smooth scrolling for scroll to top */
@@ -24,7 +42,7 @@ $('.scroll-top').click(function(event) {
 });
 
 $('.scroll-down').click(function(event) {
-  $('body, html').stop().animate({scrollTop: 650}, 1500, 'easeInOutExpo');
+  $('body, html').stop().animate({scrollTop: 670}, 1500, 'easeInOutExpo');
   event.preventDefault();
 });
 
