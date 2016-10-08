@@ -42,7 +42,7 @@ $('.scroll-top').click(function(event) {
 });
 
 $('.scroll-down').click(function(event) {
-  $('body, html').stop().animate({scrollTop: 670}, 1500, 'easeInOutExpo');
+  $('body, html').stop().animate({scrollTop: 870}, 1500, 'easeInOutExpo');
   event.preventDefault();
 });
 
