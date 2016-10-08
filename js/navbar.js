@@ -1,6 +1,6 @@
 $('#nav').affix({
   offset: {
-    top: $('header').height()-$('#nav').height() - 150
+    top: $('header').height()-$('#nav').height() - 10
   }
 });
 
@@ -18,7 +18,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-  if ( $(this).scrollTop() > 650 ) {
+  if ( $(this).scrollTop() > 848 ) {
     $('#content').css('padding-top', 50);
   }
   else {
